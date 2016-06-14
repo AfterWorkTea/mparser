@@ -84,11 +84,9 @@ public class MiniXMLAutomatonImpl implements MiniXMLAutomaton {
 
 	public int endElement(String name) throws MiniXMLException {
 		if (name == null)
-			throw new MiniXMLException(
-					MiniXMLException._MXMLE_AE_UKNOWN_END_TOKEN);
+			throw new MiniXMLException(MiniXMLException._MXMLE_AE_UKNOWN_END_TOKEN);
 		if (name.compareToIgnoreCase(getName()) != 0)
-			throw new MiniXMLException(
-					MiniXMLException._MXMLE_AE_UKNOWN_END_TOKEN);
+			throw new MiniXMLException(MiniXMLException._MXMLE_AE_UKNOWN_END_TOKEN);
 		int state = oState.getStateID();
 		oState = oState.getParent();
 		// if(oState.isRoot())

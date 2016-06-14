@@ -3,8 +3,9 @@ MParser
 
 ## Welcome to the MParser!
 
-The parser is based on one fundamental observation. Most IT people don't know nor take advantage of the full XML grammar.
-In consequence a significant reduction of XML grammar (from 89 to 25 rules) still allows to parse most XML and it is much more intuitive.
+The MParser is short for Mini (XML) Parser. It is based on one fundamental observation. 
+Most IT people don't know nor take advantage of the full XML grammar.
+In consequence a significant reduction of XML grammar (from 89 to 25 rules) allows to parse most XMLs and makes it much more intuitive.
 For example the MParser works with the Jenkins */api/xml files.
 
 ## MParser characteristic
@@ -22,7 +23,7 @@ All together it gives a parser that:
 * The jar takes only some KB and doesn't require any external classes.
 * Combines advantages of both SAX and DOM: takes minimum resources and allows to unambiguously address XML elements.
 
-Very loosely the rules can be expressed as:
+Very loosely the that can be expressed as:
 
 * The system complies with XML elements: empty tag element or a sequence of start element, content and end element.
 * A tag includes name. A start tag might also include attributes in addition to a name.
@@ -31,7 +32,7 @@ Very loosely the rules can be expressed as:
 * The '<?xml' … '?>' sequence is accepted but there is no expectation that the system will act according to it.
 * Works with ASCII and UTF-8 data.
 
-See technical documentation on [https://github.com/AfterWorkTea/mparser/wiki](https://github.com/AfterWorkTea/mparser/wiki)
+See [https://github.com/AfterWorkTea/mparser/wiki](https://github.com/AfterWorkTea/mparser/wiki) for more information.
 
 Thank you for visiting!
 Robert

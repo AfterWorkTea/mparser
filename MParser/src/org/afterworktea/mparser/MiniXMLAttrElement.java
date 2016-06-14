@@ -31,6 +31,13 @@ public class MiniXMLAttrElement extends MiniXMLElement {
 		return (String) attributes.get(key);
 	}
 
+	public String get(String key, String def) {
+		if(attributes.containsKey(key))	{
+			return (String) attributes.get(key);
+		}
+		return def;
+	}
+
 	public void put(String key, String value) {
 		attributes.put(key, value);
 	}
