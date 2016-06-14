@@ -3,10 +3,7 @@ package org.afterworktea.mparser;
 /**
  * @author Robert Berlinski
  * 
- *         To change this generated comment edit the template variable
- *         "typecomment": Window>Preferences>Java>Templates. To enable and
- *         disable the creation of type comments go to
- *         Window>Preferences>Java>Code Generation.
+ *         The base class for Mini XML Elements
  */
 
 public class MiniXMLElement {
@@ -14,6 +11,12 @@ public class MiniXMLElement {
 	private int stateID;
 	private String name;
 
+	/**
+	 * @param state
+	 *            the XML tree travers position
+	 * @param n
+	 *            the name of the attribute
+	 */
 	public MiniXMLElement(int state, String n) {
 		stateID = state;
 		name = n;
