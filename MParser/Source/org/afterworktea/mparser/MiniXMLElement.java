@@ -13,7 +13,7 @@ public class MiniXMLElement {
 
 	/**
 	 * @param state
-	 *            the XML tree travers position
+	 *            the XML tree travels position
 	 * @param n
 	 *            the name of the attribute
 	 */

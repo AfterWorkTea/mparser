@@ -13,7 +13,7 @@ public class MiniXMLAttrElement extends MiniXMLElement {
 
 	/**
 	 * @param state
-	 *            the XML tree travers position
+	 *            the XML tree travels position
 	 * @param n
 	 *            the name of the element
 	 */
@@ -28,7 +28,7 @@ public class MiniXMLAttrElement extends MiniXMLElement {
 
 	/**
 	 * @param key
-	 *            a name of an attribue
+	 *            a name of an attribute
 	 * @return true if contains the key
 	 */
 	public boolean containsKey(String key) {
@@ -49,7 +49,7 @@ public class MiniXMLAttrElement extends MiniXMLElement {
 	 * @param key
 	 *            a name of an attribute
 	 * @param def
-	 *            a defult reeturn value
+	 *            a default return value
 	 * @return the value of attribute to which the specified key is mapped, or
 	 *         def
 	 */
