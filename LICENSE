@@ -3,50 +3,33 @@ Version 1, 26 April 2018
 
 TERMS AND CONDITIONS
 
-1.	Definitions
-
-"This License" refers to this MParser License version 1.
-"The Program" refers to any to MParser.
-"The Author" refers to Robert Berlinski, who wrote the code.
-"LICENSOR" refers to The Author.
-"The User" refers to a person who would like to download, copy or use in any way the source code of the Program or any of its part.
-
-2.	User’s rights and restrictions
-
 This License is valid until the end of 31 December 2018 GMT.
 
-Licensee may not assign or transfer his rights and duties under this license.
+1. Definitions
 
-Licensee may not use Software for commercial purposes. for the purpose of this license, commercial purposes nor for any material benefits.
+"The Program" refers to MParser.
+"The Author" refers to Robert Berlinski, who wrote the code.
+"LICENSOR" refers to The Author.
 
-This License grants any Licensee the right to browse the source code of the Program using the Github pages and a web browser. 
+2. User’s rights and restrictions
 
-This License limits any potential rights listed below to Licensee and means of media that are located in the European Union or the United States of America. Licensee and means of media that are in other localizations are prohibited from downloading, coping, compiling and any usage of the source code of the Program or any of its parts besides browsing the source code of the Program using the Github pages and a web browser.
+Anybody can browse The Program from Github using a web browser.
 
-This License limits any potential rights listed below to Licensee that must be either:
--	private persons using their private means of media at their private home
--	members of schools using the school’s means of media at the school
--	members of universities using the university means of media at the university.
+Making or storing any other copies of the Program or any parts of the Program besides a browser cache without a written permission from the Licensor is prohibited.
 
-Any other Users, who are not private persons nor members of schools nor members of university are prohibited from downloading, coping, compiling and any usage of the source code of the Program or any of its parts besides browsing the source code of the Program using the Github pages and a web browser.
+Compiling the Program or using compiled versions of the Program or including any parts of the Program to other systems without a written permission from the Licensor is prohibited.
 
-This License limits any potential rights listed below only for educational and no profit usage. Any commercial usage of the source code of the Program or any of its parts is prohibited by This License.
+Any use of The Program or it's parts for commercial purposes or for any material benefits or for publishing without written a permission from the Licensor is prohibited
 
-The License grants to Licensee who satisfy the above conditions and only to the Users, the right to download the source code of the Program, to modify it, to compile and to execute the compiled code that include the source code of the Program as long as it include the copy of This License and the link to its repository but only for educational and no profit reasons using only means of media that belong to the User.
+This license prohibits any Licensee to use the source code of the Program or any of its parts for patents without written a permission from the Author.
 
-This license prohibits anybody to copy the source code or The Program or any of its part or use it in any way outside of private User’s home, outside of schools/universities. In particular it is prohibited to publish the source code of the Program or any of its parts or share any works that are based on  or include the source code of the Program or any of its parts with third parties without written permissions from the Author.
-
-This license prohibits any Licensee to make profit from the source code of the Program or any of its parts without written permission from the Author.
-
-This license prohibits any Licensee to use the source code of the Program or any of its parts for patents without written permission from the Author.
-
-  3. Disclaimer of Warranty.
+3. Disclaimer of Warranty.
 
 THERE IS NO WARRANTY FOR THE SOURCE CODE, FOR THE PROGRAM OR ANY OF ITS PARTS, TO THE EXTENT PERMITTED BY APPLICABLE LAW. THE LICENSOR PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. LICENSOR HEREBY DISCLAIMS ANY WARRANTY THAT THE SOFTWARE SHALL BE ERROR FREE, WITHOUT DEFECTS OR CODE WHICH MAY CAUSE DAMAGE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH THE LICENSEE. SHOULD THE PROGRAM PROVE DEFECTIVE, THE LICENSEE ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION. LICENSEE SHALL BE SOLELY LIABLE TO ANY DAMAGE, DEFECT OR LOSS INCURRED AS A RESULT OF OPERATING SOFTWARE.
 
 LICENSEE HEREBY STATES THAT HE INSPECTED THE SOFTWARE THOROUGHLY AND FOUND IT SATISFACTORY, THAT IT DOES NOT INTERFERE WITH HIS REGULAR OPERATION AND THAT IT DOES MEET THE STANDARDS AND SCOPE OF HIS COMPUTER SYSTEMS, ARCHITECTURE, PROCEDURES AND STANDARDS. LICENSEE HEREBY WAIVES ANY CLAIMS REGARDING THE SOFTWARE'S INCOMPATIBILITY, PERFORMANCE, RESULTS AND FEATURES, AND WARRANTS THAT HE INSPECTED THE SOFTWARE.
 
-  4. Limitation of Liability.
+4. Limitation of Liability.
 
 TO THE EXTENT PERMITTED UNDER LAW, THE SOFTWARE IS PROVIDED UNDER AN AS-IS BASIS. LICENSOR SHALL NEVER, AND WITHOUT ANY LIMIT, BE LIABLE FOR ANY DAMAGE, COST, EXPENSE OR ANY OTHER PAYMENT INCURRED BY LICENSEE AS A RESULT OF SOFTWARE’S ACTIONS, FAILURE, BUGS AND/OR ANY OTHER INTERACTION BETWEEN THE SOFTWARE  AND LICENSEE’S END-EQUIPMENT, COMPUTERS, OTHER SOFTWARE OR ANY 3RD PARTY, END-EQUIPMENT, COMPUTER OR SERVICES.  MOREOVER, LICENSOR SHALL NEVER BE LIABLE FOR ANY DEFECT IN SOURCE CODE WRITTEN BY LICENSEE WHEN RELYING ON THE SOFTWARE OR USING THE SOFTWARE’S SOURCE CODE. EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
 SUCH DAMAGES.
@@ -54,4 +37,6 @@ SUCH DAMAGES.
 LICENSEE WARRANTS THAT HE INSPECTED THE SOFTWARE AND THAT IT IS ADEQUATE TO HIS NEEDS. ACCORDINGLY, AS THE SOFTWARE IS INTANGIBLE GOODS, LICENSEE SHALL NOT BE, EVER, ENTITLED TO ANY REFUND, REBATE, COMPENSATION OR RESTITUTION FOR ANY REASON WHATSOEVER, EVEN IF THE SOFTWARE CONTAINS MATERIAL FLAWS.
 
 LICENSEE HEREBY WARRANTS TO HOLD LICENSOR HARMLESS AND INDEMNIFY LICENSOR FOR ANY LAWSUIT BROUGHT AGAINST IT IN REGARDS TO LICENSEE’S USE OF THE SOFTWARE IN MEANS THAT VIOLATE, BREACH OR OTHERWISE CIRCUMVENT THIS LICENSE, LICENSOR'S INTELLECTUAL PROPERTY RIGHTS OR LICENSOR'S TITLE IN THE SOFTWARE. LICENSOR SHALL PROMPTLY NOTIFY LICENSEE IN CASE OF SUCH LEGAL ACTION AND REQUEST LICENSEE’S CONSENT PRIOR TO ANY SETTLEMENT IN RELATION TO SUCH LAWSUIT OR CLAIM.
+
+
 
