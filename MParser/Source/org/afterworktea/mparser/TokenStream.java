@@ -11,7 +11,7 @@ public class TokenStream {
 
 	private Reader oReader;
 	private int nextp0, nextp1, nextp2, nextp3, nextp4, nextp5;
-	private static final int tError = -1;
+	private static final int TERROR = -1;
 
 	/**
 	 * TokenStreem constructor comment.
@@ -50,16 +50,14 @@ public class TokenStream {
 	}
 
 	public String getString() {
-		char c[] = { 0, 0, 0, 0, 0, 0 };
-		c[0] = (nextp0 == tError) ? 0 : (char) nextp0;
-		c[1] = (nextp1 == tError) ? 0 : (char) nextp1;
-		c[2] = (nextp2 == tError) ? 0 : (char) nextp2;
-		c[3] = (nextp3 == tError) ? 0 : (char) nextp3;
-		c[4] = (nextp4 == tError) ? 0 : (char) nextp4;
-		c[5] = (nextp5 == tError) ? 0 : (char) nextp5;
-		String s = new String(c);
-		// , (char) nextp1};
-		return s;
+		char[] c = { 0, 0, 0, 0, 0, 0 };
+		c[0] = (nextp0 == TERROR) ? 0 : (char) nextp0;
+		c[1] = (nextp1 == TERROR) ? 0 : (char) nextp1;
+		c[2] = (nextp2 == TERROR) ? 0 : (char) nextp2;
+		c[3] = (nextp3 == TERROR) ? 0 : (char) nextp3;
+		c[4] = (nextp4 == TERROR) ? 0 : (char) nextp4;
+		c[5] = (nextp5 == TERROR) ? 0 : (char) nextp5;
+		return new String(c);
 	}
 
 	private int readOneChar() {
@@ -67,9 +65,9 @@ public class TokenStream {
 			if (oReader.ready())
 				return oReader.read();
 			else
-				return tError;
+				return TERROR;
 		} catch (IOException e) {
-			return tError;
+			return TERROR;
 		}
 	}
 

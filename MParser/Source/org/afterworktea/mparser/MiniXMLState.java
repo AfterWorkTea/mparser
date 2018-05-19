@@ -52,16 +52,15 @@ public class MiniXMLState {
 	}
 
 	public MiniXMLState getChild(int state, int token) {
-		Integer oToken = new Integer(token);
-		if (!children.containsKey(oToken)) {
+		if (!children.containsKey(token)) {
 			MiniXMLState child = new MiniXMLState(state, token, this);
-			children.put(oToken, child);
+			children.put(token, child);
 		}
-		return (MiniXMLState) children.get(oToken);
+		return children.get(token);
 	}
 
 	public boolean hasParen() {
-		return (parent != null);
+		return (parent == null) ? false : true;
 	}
 
 }

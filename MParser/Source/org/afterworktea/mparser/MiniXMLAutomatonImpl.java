@@ -40,21 +40,25 @@ public class MiniXMLAutomatonImpl implements MiniXMLAutomaton {
 		oState = oDoc;
 	}
 
+	private void checkAndStartElement(StringBuilder name) {
+		if (name.length() > 0) {
+			startElement(name.toString());
+		}
+	}
+
 	public void learn(String learn) {
 		char c;
-		String name = "";
+		StringBuilder name = new StringBuilder("");
 		for (int i = 0; i < learn.length(); i++) {
 			c = learn.charAt(i);
 			switch (c) {
 			case '(':
-				if (name.length() > 0)
-					startElement(name);
-				name = "";
+				checkAndStartElement(name);
+				name.delete(0, name.length());
 				break;
 			case ')':
-				if (name.length() > 0)
-					startElement(name);
-				name = "";
+				checkAndStartElement(name);
+				name.delete(0, name.length());
 				oState = oState.getParent();
 				break;
 			case '\n':
@@ -63,18 +67,13 @@ public class MiniXMLAutomatonImpl implements MiniXMLAutomaton {
 			case ' ':
 				break;
 			default:
-				name += c;
+				name.append(c);
 				break;
 			}
 		}
 	}
 
 	public int startElement(String name) {
-		// if(oState == null)
-		// {
-		// oState = new MiniXMLState(nextState++, getTokenID(name));
-		// return oState.getStateID();
-		// }
 		oState = oState.getChild(nextState, getTokenID(name));
 		int state = oState.getStateID();
 		if (state == nextState)
@@ -84,16 +83,13 @@ public class MiniXMLAutomatonImpl implements MiniXMLAutomaton {
 
 	public int endElement(String name) throws MiniXMLException {
 		if (name == null)
-			throw new MiniXMLException(MiniXMLException._MXMLE_AE_UKNOWN_END_TOKEN);
+			throw new MiniXMLException(MiniXMLException.MXMLE_AE_UKNOWN_END_TOKEN);
 		if (name.compareToIgnoreCase(getName()) != 0)
-			throw new MiniXMLException(MiniXMLException._MXMLE_AE_UKNOWN_END_TOKEN);
+			throw new MiniXMLException(MiniXMLException.MXMLE_AE_UKNOWN_END_TOKEN);
 		int state = oState.getStateID();
 		oState = oState.getParent();
-		// if(oState.isRoot())
-		// return state;
-		// oState = oState.getParent();
 		if (oState == null)
-			throw new MiniXMLException(MiniXMLException._MXMLE_AE_UKNOWN_PARENT);
+			throw new MiniXMLException(MiniXMLException.MXMLE_AE_UKNOWN_PARENT);
 		return state;
 	}
 
@@ -118,8 +114,7 @@ public class MiniXMLAutomatonImpl implements MiniXMLAutomaton {
 	}
 
 	public String getName() {
-		String n = (String) tokens.get(getToken());
-		return n;
+		return tokens.get(getToken());
 	}
 
 }
