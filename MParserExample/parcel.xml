@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<parcel type="overnight">
+	<sender type="company">
+		<name>Shipping Company</name>
+	</sender>
+	<addressee type="home">
+		<name>Adam</name>
+		<city>Rome</city>
+	</addressee>
+</parcel>
