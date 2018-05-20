@@ -38,7 +38,7 @@ Very loosely the MParser grammar can be expressed as:
 Please note, MParser doesn't parse XML that includes CDATA.
 
 More renounces:
-* See [MParserExample - a working example with howto](https://github.com/AfterWorkTea/mparser/MParserExample)
+* See [MParserExample - a working example with howto](https://github.com/AfterWorkTea/mparser/tree/master/MParserExample)
 * See [Tokens and grammar](https://github.com/AfterWorkTea/mparser/wiki/Tokens-and-grammar)
 * See [MParser Wiki](https://github.com/AfterWorkTea/mparser/wiki) for more information.
 
