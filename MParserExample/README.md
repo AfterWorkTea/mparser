@@ -36,14 +36,13 @@ The MParser includes a key mechanism for node identification. It is responsibili
 private final static String XML_AUTOMATON_STATES = "parcel(sender(name())addressee(name()city()))";
 ```
 
-It declares, that the XML starts with "parcel" element, that includes "sender" or "addressee", the "sender" includes "name" and "addressee" includes "name" and "city".
-The notation is straightforward and uses parentheses for nesting elements according to XML structure. The "()" terminates a leaf element.
+It declares, that the XML starts with "parcel" element, that includes "sender" or "addressee", the "sender" includes "name" and finally "addressee" includes "name" and "city". The notation is straightforward and uses parentheses for nesting elements according to XML structure. The "()" terminates a leaf element.
 
 The order of elements is important as it defines their ID's, that are natural numbers starting with 0 for the root element "parcel", 3 for sender's name, 5 for addressee's name, etc.
 
 ## Build XML handler
 
-Now we can prepare a dedicated MiniXMLHandler implementation that will receive stream of events. There are specific events for beginning/end of document, for beginning/end of element and for elements data. 
+Now we can prepare a dedicated MiniXMLHandler implementation that will receive stream of events. There are specific events for beginning/end of document, for beginning/end of element and for element's data. 
 
 ``` Java
 public void startDocument()
@@ -53,9 +52,9 @@ public void endElement(MiniXMLEndElement element)
 public void data(int state, String data)
 ```
 
-Each element's event provides a state value that corespondents to to element's ID as declared by an MiniXMLAutomaton. Therefore a dedicated handler object "knows" the localization and can take adequate actions to handle the data, e.g. pass it to proper Parcel's setters methods.
+Each element's event provides a state value that corespondents to element's ID as declared by an MiniXMLAutomaton. Therefore a dedicated handler object "knows" the localization and can take adequate actions to handle the data, e.g. pass it to proper Parcel's setters methods.
 
-For instance, the following will match Parcel setters (please note the ID's as declared above)
+For instance, the following will match Parcel setters (please note the ID's in switch as declared above):
 
 ``` Java
 @Override
@@ -76,7 +75,7 @@ public void data(int state, String data) {
 }
 ```
 
-And reads element's attributes
+And reads attributes from XML:
 
 ``` Java
 @Override
@@ -116,7 +115,7 @@ That's it. The ParcelMiniXMLHandler is ready.
 
 ## Run the parser
 
-The elements are ready to run the parser, we just need to read the XML file:
+The components are ready to run the parser, we just need to read the XML file:
 
 ``` Java
 File file = new File(fileName);
@@ -126,6 +125,8 @@ InputStream is = new FileInputStream(file);
 And prepare the objects:
 
 ``` Java
+private final static String XML_AUTOMATON_STATES = "parcel(sender(name())addressee(name()city()))";
+
 MiniXMLAutomaton automaton = new MiniXMLAutomatonImpl(XML_AUTOMATON_STATES);
 ParcelMiniXMLHandler handler = new ParcelMiniXMLHandler();
 MiniXMLParser parser = new MiniXMLParser(handler, automaton);
@@ -138,4 +139,4 @@ parser.parse(is);
 return handler.getParcel();
 ```
 
-Please remember to include the MParser for the example to compile.
+Please remember to include the MParser to the example.
